@@ -4,7 +4,7 @@ namespace HelloWorld
 {
     public class Message
     {
-        private string _helloMessage; 
+        private string _helloMessage;
         private string userName = Environment.UserName;
         private int day = (int)DateTime.Now.DayOfWeek;
         private int hour = DateTime.Now.Hour;
