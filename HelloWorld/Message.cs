@@ -5,43 +5,59 @@ namespace HelloWorld
     public class Message
     {
         private string _helloMessage;
-        private string userName = Environment.UserName;
-        private int day = (int)DateTime.Now.DayOfWeek;
-        private int hour = DateTime.Now.Hour;
+        private int _day;
+        private int _hour;
+        private readonly int _morning;
+        private readonly int _afternoon;
+        private readonly int _night;
+
+        public Message(int morning, int afternoon, int night)
+        {
+            this._morning = morning;
+            this._afternoon = afternoon;
+            this._night = night;
+        }
 
         public string HelloMessage
         {
-            get => _helloMessage;
-            set
+            get { return _helloMessage; }
+            set { _helloMessage = GetMessage(value); }
+        }
+
+        private string GetMessage(string userName)
+        {
+            _day = (int)DateTime.Now.DayOfWeek;
+            _hour = DateTime.Now.Hour;
+
+            if (_day > 0 && _day < 6)
             {
-                if (day > 0 && day < 6)
+                if (_hour >= 0 && _hour < _morning)
                 {
-                    if (hour > 0 && hour < 9)
-                    {
-                        Console.WriteLine("Bonsoir " + userName);
-                    }
-                    else if (hour > 9 && hour < 13)
-                    {
-                        Console.WriteLine("Bonjour " + userName);
-                    }
-                    else if (hour > 13 && hour < 18)
-                    {
-                        Console.WriteLine("Bon après-midi " + userName);
-                    }
-                    else if (day < 5 && hour > 18 && hour < 24)
-                    {
-                        Console.WriteLine("Bonsoir " + userName);
-                    }
-                    else if (hour > 18 && hour < 24)
-                    {
-                        Console.WriteLine("Bon week-end " + userName);
-                    }
+                    return "Bonsoir " + userName;
                 }
-                else
+                else if (_hour >= _morning && _hour < _afternoon)
                 {
-                    Console.WriteLine("Bon week-end " + userName);
+                    return "Bonjour " + userName;
+                }
+                else if (_hour >= _afternoon && _hour < _night)
+                {
+                    return "Bon après-midi " + userName;
+                }
+                else if (_day < 5 && _hour >= _night && _hour < 24)
+                {
+                    return "Bonsoir " + userName;
+                }
+                else if (_hour >= _night && _hour < 24)
+                {
+                    return "Bon week-end " + userName;
                 }
             }
+            else
+            {
+                return "Bon week-end " + userName;
+            }
+
+            return "error";
         }
     }
 }
