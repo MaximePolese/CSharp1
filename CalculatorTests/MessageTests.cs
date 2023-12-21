@@ -10,9 +10,9 @@ namespace CalculatorTests
     {
 
         [TestMethod]
-        public void AddTest()
+        public void BonjourTest()
         {
-            Message test = new Message(6, 12, 19);
+            Message test = new Message(9, 13, 18, new FakeTime(4, 11));
             string result = test.Response();
             Assert.AreEqual("Bonjour maxime.polese", result);
         }

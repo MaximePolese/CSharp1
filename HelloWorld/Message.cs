@@ -8,7 +8,7 @@ namespace HelloWorld
         private readonly int _morning;
         private readonly int _afternoon;
         private readonly int _night;
-        private ITime _time;
+        private readonly ITime _time;
 
         public Message(int morning, int afternoon, int night)
             : this(morning, afternoon, night, new Time())
