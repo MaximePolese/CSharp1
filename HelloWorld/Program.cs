@@ -4,10 +4,6 @@ namespace HelloWorld
 {
     internal class Program
     {
-        // private void quit()
-        // {
-        //     return keyInfo.Key != ConsoleKey.Q;
-        // }
         public static void Main(string[] args)
         {
             string userName = Environment.UserName;
@@ -17,8 +13,6 @@ namespace HelloWorld
             };
 
             ConsoleKeyInfo keyInfo;
-            string exit = "";
-
             do
             {
                 Console.WriteLine("Press 'Q' to quit or press 'Enter' to continue");
@@ -27,9 +21,18 @@ namespace HelloWorld
                 {
                     Console.WriteLine(message.HelloMessage);
                 }
+            } while (keyInfo.Key != ConsoleKey.Q);
 
-                exit = Console.ReadLine();
-            } while (exit != "exit");
+            // string exit = "";
+            // while (exit != "exit")
+            // {
+            //     Console.WriteLine("Write 'exit' to quit or press 'Enter' to continue");
+            //     exit = Console.ReadLine();
+            //     if (exit != "exit")
+            //     {
+            //         Console.WriteLine(message.HelloMessage);
+            //     }
+            // }
         }
     }
 }
