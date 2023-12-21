@@ -10,9 +10,12 @@ namespace CalculatorTests
     {
 
         [TestMethod]
-        public void METHOD()
+        public void AddTest()
         {
-            
+            Calculator test = new Calculator();
+            string result = test.Add();
+            Assert.AreEqual("salut", result);
         }
+       
     }
 }

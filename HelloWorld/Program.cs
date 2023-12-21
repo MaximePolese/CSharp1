@@ -6,12 +6,7 @@ namespace HelloWorld
     {
         public static void Main(string[] args)
         {
-            string userName = Environment.UserName;
-            Message message = new Message(9, 13, 18)
-            {
-                HelloMessage = userName
-            };
-
+            Message message = new Message(9, 13, 18);
             ConsoleKeyInfo keyInfo;
             do
             {
@@ -22,17 +17,6 @@ namespace HelloWorld
                     Console.WriteLine(message.HelloMessage);
                 }
             } while (keyInfo.Key != ConsoleKey.Q);
-
-            // string exit = "";
-            // while (exit != "exit")
-            // {
-            //     Console.WriteLine("Write 'exit' to quit or press 'Enter' to continue");
-            //     exit = Console.ReadLine();
-            //     if (exit != "exit")
-            //     {
-            //         Console.WriteLine(message.HelloMessage);
-            //     }
-            // }
         }
     }
 }
