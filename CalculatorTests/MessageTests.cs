@@ -6,16 +6,15 @@ namespace CalculatorTests
 {
     [TestClass]
     [TestSubject(typeof(Program))]
-    public class CalculatorTests
+    public class MessageTests
     {
 
         [TestMethod]
         public void AddTest()
         {
-            Calculator test = new Calculator();
-            string result = test.Add();
-            Assert.AreEqual("salut", result);
+            Message test = new Message(6, 12, 19);
+            string result = test.Response();
+            Assert.AreEqual("Bonjour maxime.polese", result);
         }
-       
     }
 }
