@@ -4,7 +4,7 @@ namespace CalculatorTests
 {
     public class FakeUser : IUser
     {
-        private string _name;
+        private readonly string _name;
 
         public FakeUser(string name)
         {

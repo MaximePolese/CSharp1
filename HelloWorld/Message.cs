@@ -4,11 +4,11 @@ namespace HelloWorld
 {
     public class Message
     {
-        private readonly IUser _user;
         private readonly int _morning;
         private readonly int _afternoon;
         private readonly int _night;
         private readonly ITime _time;
+        private readonly IUser _user;
 
         public Message(int morning, int afternoon, int night)
             : this(morning, afternoon, night, new Time(), new User())
@@ -27,11 +27,6 @@ namespace HelloWorld
         public string HelloMessage
         {
             get { return Response(); }
-        }
-
-        public IUser GetUser
-        {
-            get { return _user; }
         }
 
         public string Response()
