@@ -4,3 +4,9 @@ C:\Users\maxime.polese\RiderProjects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.
 C:\Users\maxime.polese\RiderProjects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
 C:\Users\maxime.polese\RiderProjects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
 C:\Users\maxime.polese\RiderProjects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\maxime.polese\RiderProjects\CSharp1\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache

@@ -10,7 +10,7 @@
     <ProjectGuid>585aa729-0907-4877-aab5-e9351a13939d</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>CalculatorTests</RootNamespace>
-    <AssemblyName>CalculatorTests</AssemblyName>
+    <AssemblyName>MessageTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
